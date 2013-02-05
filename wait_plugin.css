@@ -1,0 +1,22 @@
+/*BLUE BUTTON */
+.wait_div
+{
+	background: rgba(0,0,0,0.6);
+
+
+}
+.wait_div>p
+{
+	margin: 5% 0 0 0;
+	height: 30px;
+	width: 100%;
+	font-size: 20px;
+	text-align: center
+}
+.wait_div>p>span
+{
+	padding: 10px;
+	background: #7A97BA;
+	color: white;
+	border-radius: 5px 5px 5px 5px;
+}
