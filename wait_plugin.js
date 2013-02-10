@@ -2,7 +2,7 @@
 (function() {
 
   $(document).ready(function() {
-    return $.fn.wait_plugin = function(data) {
+    return $.fn.wait = function(data) {
       if (data === void 0) {
         data = {
           state: 'begin',
@@ -31,8 +31,8 @@
             div_wait.addClass('wait_div');
             p_chargement = $(document.createElement('p'));
             span_chargement = $(document.createElement('span'));
-            if (data.message === '') {
-              data.message = ' Chargement... ';
+            if (data.message === '' || data.message === void 0) {
+              data.message = ' Please wait ... ';
             }
             if (data.state === 'show_message') {
               span_chargement.text(data.message);

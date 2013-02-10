@@ -1,6 +1,6 @@
 $(document).ready(()->
     #STATE  = 'BEGIN' OR 'END' OR 'SHOW MESSAGE'
-    $.fn.wait_plugin = (data)->
+    $.fn.wait = (data)->
         if data == undefined
             data = 
                 state : 'begin'
@@ -30,8 +30,8 @@ $(document).ready(()->
                     p_chargement = $(document.createElement('p'))
                     span_chargement = $(document.createElement('span'))
                     
-                    if data.message == ''
-                        data.message = ' Chargement... '
+                    if data.message == '' || data.message == undefined
+                        data.message = ' Please wait ... '
 
                     if data.state == 'show_message'
                         span_chargement.text(data.message)
