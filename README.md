@@ -3,7 +3,7 @@ Plugin wait (JS)
 
 <p> This plugin is useful to use wait box during your ajax request for example </p>
 
-## What you nedd
+## What you need
 - [JQuery](http://jquery.com/)
 
 
